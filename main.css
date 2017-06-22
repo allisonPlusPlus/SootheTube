@@ -29,3 +29,8 @@ form {
   margin-bottom: 10px;
 
 }
+
+.suggestions {
+  color: white;
+  font-weight: bold;
+}
