@@ -21,6 +21,10 @@ body {
   margin-top: 400px;
 }
 
+.h1, .h2 {
+  color: white;
+}
+
 form {
   margin-bottom: 10px;
 
