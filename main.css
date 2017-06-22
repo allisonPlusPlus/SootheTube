@@ -16,3 +16,12 @@ body {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.content {
+  margin-top: 400px;
+}
+
+form {
+  margin-bottom: 10px;
+
+}
