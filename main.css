@@ -23,16 +23,17 @@ body {
 
 .h1{
   color: white;
+  text-shadow: 4px 4px 9px rgba(0,0,0,1);
 }
 
 form {
   margin-bottom: 10px;
-
 }
 
 .suggestions {
   color: white;
   font-weight: bold;
+text-shadow: 4px 4px 9px rgba(0,0,0,1);
 }
 
 .searchresult {
@@ -40,6 +41,7 @@ form {
   margin-top: 10px;
   margin-bottom: 50px;
   border: 1px solid white;
+
 }
 
 img:hover {
