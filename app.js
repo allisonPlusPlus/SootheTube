@@ -42,6 +42,7 @@ console.log(response.items[1].id.videoId);
 function formSubmit() {
   $("form").submit(function(e) {
     e.preventDefault();
+    $(".searchresult").removeClass("hidden");
 var query = $("#searchterm").val();
 getYouTube(query);
 
