@@ -20,9 +20,19 @@ $("#output5").find("img").attr('src', response.items[4].snippet.thumbnails.mediu
 $("#output6").find("img").attr('src', response.items[5].snippet.thumbnails.medium.url);
 
 //Make thumbnails link to video
-var watchUrl = "https://www.youtube.com/watch?v=" + response.items[1].id.videoId;
-$("#output1").find('a').attr('href', watchUrl);
-console.log(response.items[1].id.videoId)
+var watchUrl = "https://www.youtube.com/watch?v=";
+$("#output1").find('a').attr('href', watchUrl + response.items[0].id.videoId);
+$("#output2").find('a').attr('href', watchUrl + response.items[1].id.videoId);
+$("#output3").find('a').attr('href', watchUrl + response.items[2].id.videoId);
+$("#output4").find('a').attr('href', watchUrl + response.items[3].id.videoId);
+$("#output5").find('a').attr('href', watchUrl + response.items[4].id.videoId);
+$("#output6").find('a').attr('href', watchUrl + response.items[5].id.videoId);
+
+
+
+
+
+console.log(response.items[1].id.videoId);
 
   console.log(response.items[0].snippet.thumbnails.medium.url);
 
