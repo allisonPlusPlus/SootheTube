@@ -11,8 +11,7 @@ function getYouTube(query) {
 }
 
 function displayResults(response) {
-  //Fade In
-$(".searchresult-template").hide().fadeIn("slow");
+
 
 //Display thumbnails
 $("#output1").find("img").attr('src', response.items[0].snippet.thumbnails.medium.url);
