@@ -2,6 +2,7 @@ var url = "https://www.googleapis.com/youtube/v3/search";
 
 function getYouTube(query) {
   var data = {
+        maxResults: '7',
         part: 'snippet',
         key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
         q: query,
@@ -10,11 +11,27 @@ function getYouTube(query) {
 }
 
 function displayResults(response) {
-   var items = response.items;
-   for (var i = 0; i < items.length; i++) {
-     console.log(items[i].snippet.thumbnails.medium.url);
-   }
-  console.log(response.items[1].snippet.thumbnails.medium.url);
+    //
+    // var elem = $('.searchresult-template').children().clone();
+    //  var imageURL = response.items[0].snippet.thumbnails.medium.url;
+    //     elem.find('img').attr('src', imageURL);
+    //     $(".searchresult-template").append(elem);
+    //
+    //
+$("#output1").find("img").attr('src', response.items[0].snippet.thumbnails.medium.url);
+
+$("#output2").find("img").attr('src', response.items[1].snippet.thumbnails.medium.url);
+
+$("#output3").find("img").attr('src', response.items[2].snippet.thumbnails.medium.url);
+
+$("#output4").find("img").attr('src', response.items[3].snippet.thumbnails.medium.url);
+
+$("#output5").find("img").attr('src', response.items[4].snippet.thumbnails.medium.url);
+
+$("#output6").find("img").attr('src', response.items[5].snippet.thumbnails.medium.url);
+
+  console.log(response.items[0].snippet.thumbnails.medium.url);
+
 }
 
 
