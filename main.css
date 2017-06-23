@@ -28,7 +28,7 @@ video#bgvid {
 
 @media screen and (max-device-width: 800px) {
     html {
-         background: url(2065.jpeg) #000 no-repeat center center fixed;
+         background: url(pinksunset.jpg) #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;
