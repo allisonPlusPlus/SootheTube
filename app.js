@@ -1,18 +1,17 @@
+var url = "https://www.googleapis.com/youtube/v3/search";
 
 function getYouTube(query) {
-  $.ajax({
-    type: "GET",
-    url: "https://api.myjson.com/bins/wgonb",
-    dataType: "json",
-    success: function(response) {
-    console.log(query);
-  },
-
-    error: function(xhr, status, e) { console.log(status, e); } });
-
-
+  var data = {
+        part: 'snippet',
+        key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
+        q: query,
+    };
+    $.getJSON(url, data, callbackFn);
 }
 
+function callbackFn() {
+  console.log("success");
+}
 
 
 function formSubmit() {
