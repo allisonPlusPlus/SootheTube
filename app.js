@@ -1,11 +1,11 @@
 
-function getYouTube() {
+function getYouTube(query) {
   $.ajax({
     type: "GET",
     url: "https://api.myjson.com/bins/wgonb",
     dataType: "json",
     success: function(response) {
-    console.log("success!");
+    console.log(query);
   },
 
     error: function(xhr, status, e) { console.log(status, e); } });
@@ -18,8 +18,8 @@ function getYouTube() {
 function formSubmit() {
   $("form").submit(function(e) {
     e.preventDefault();
-
-getYouTube()
+var query = $("#searchterm").val();
+getYouTube(query);
 
 });
 }
