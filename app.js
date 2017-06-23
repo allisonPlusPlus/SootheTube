@@ -6,11 +6,12 @@ function getYouTube(query) {
         key: 'AIzaSyApCFcADbM3EgInOvuv2IevCLHYUDjaCfs',
         q: query,
     };
-    $.getJSON(url, data, callbackFn);
+    $.getJSON(url, data, displayResults);
 }
 
-function callbackFn() {
+function displayResults(response) {
   console.log("success");
+  console.log(response)
 }
 
 
