@@ -10,7 +10,10 @@ function getYouTube(query) {
 }
 
 function displayResults(response) {
-  
+   var items = response.items;
+   for (var i = 0; i < items.length; i++) {
+     console.log(items[i].snippet.thumbnails.medium.url);
+   }
   console.log(response.items[1].snippet.thumbnails.medium.url);
 }
 
