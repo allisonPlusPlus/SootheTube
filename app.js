@@ -10,8 +10,8 @@ function getYouTube(query) {
 }
 
 function displayResults(response) {
-  console.log("success");
-  console.log(response)
+  
+  console.log(response.items[1].snippet.thumbnails.medium.url);
 }
 
 
