@@ -22,7 +22,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(2065.jpeg.jpg) no-repeat;
+    background: url(pinksunset.jpg) no-repeat;
     background-size: cover;
 }
 
