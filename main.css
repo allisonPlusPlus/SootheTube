@@ -47,6 +47,9 @@ img:hover {
   transform: scale(1.05, 1.05);
 }
 
+img {
+  transition: all .5s ease;
+}
 
 .thumbnails {
   width: 100%;
