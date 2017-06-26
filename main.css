@@ -27,13 +27,30 @@ video#bgvid {
 }
 
 @media screen and (max-device-width: 800px) {
-    html {
-         background: url(pinksunset.jpg) #000 no-repeat center center fixed;
-    }
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: url('pinksunset.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
     #bgvid {
         display: none;
     }
 }
+
+
 .content {
   margin-top: 250px;
 }
