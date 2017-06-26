@@ -12,6 +12,7 @@ function getYouTube(query) {
 
 function displayResults(response) {
 
+$(".searchresult").removeClass("hidden");
 
 //Display thumbnails
 $("#output1").find("img").attr('src', response.items[0].snippet.thumbnails.medium.url);
@@ -44,7 +45,6 @@ console.log(response.items[1].id.videoId);
 function formSubmit() {
   $("form").submit(function(e) {
     e.preventDefault();
-    $(".searchresult").removeClass("hidden");
 var query = $("#searchterm").val();
 getYouTube(query);
 
