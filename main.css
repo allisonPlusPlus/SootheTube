@@ -54,11 +54,8 @@ text-shadow: 4px 4px 9px rgba(0,0,0,1);
 }
 
 .searchresult {
-  background-color: #606060;
   margin-top: 10px;
   margin-bottom: 50px;
-  border: 1px solid white;
-
 }
 
 .nopadding {
