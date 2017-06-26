@@ -30,13 +30,6 @@ $("#output3").find('a').attr('href', watchUrl + response.items[2].id.videoId);
 $("#output4").find('a').attr('href', watchUrl + response.items[3].id.videoId);
 $("#output5").find('a').attr('href', watchUrl + response.items[4].id.videoId);
 $("#output6").find('a').attr('href', watchUrl + response.items[5].id.videoId);
-
-
-
-console.log(response.items[1].id.videoId);
-
-  console.log(response.items[0].snippet.thumbnails.medium.url);
-
 }
 
 
