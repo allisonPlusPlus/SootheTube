@@ -48,6 +48,14 @@ body {
     #bgvid {
         display: none;
     }
+
+ h1 {
+   font-size: 60px;
+ }
+ .suggestions {
+   font-size: 25px;
+ }
+
 }
 
 

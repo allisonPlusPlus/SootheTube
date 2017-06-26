@@ -33,8 +33,6 @@ $("#output6").find('a').attr('href', watchUrl + response.items[5].id.videoId);
 
 
 
-
-
 console.log(response.items[1].id.videoId);
 
   console.log(response.items[0].snippet.thumbnails.medium.url);
