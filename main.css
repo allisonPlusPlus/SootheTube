@@ -42,6 +42,11 @@ html {
   width: 100%; display:block;
 }
 
+.content {
+  margin-top: 50px !important;
+
+}
+
 body {
     background: url('pinksunset.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -53,9 +58,7 @@ body {
         display: none;
     }
 
-    .content {
-      margin-top: 25px;
-    }
+
 
 }
 
