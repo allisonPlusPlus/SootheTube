@@ -38,6 +38,8 @@ html {
     min-height: 100%;
 }
 
+  .custom-class { width: 100%; display:block; }
+
 body {
     background: url('pinksunset.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -48,7 +50,8 @@ body {
     #bgvid {
         display: none;
     }
-}
+
+
 
 
 .content {
