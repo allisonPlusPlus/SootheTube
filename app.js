@@ -31,7 +31,7 @@ function displayResults(response) {
 // Mouse Hover Effect
 function hoverTitle(item, i) {
   $(`#output${i+1}`).mouseover(function() {
-    $(`.title${i+1}` ).html( response.items[i].snippet.title );
+    $(`.title${i+1}` ).html(response.items[i].snippet.title );
   });
   $(`#output${i+1}`).mouseout(function() {
     $("h2" ).empty();
