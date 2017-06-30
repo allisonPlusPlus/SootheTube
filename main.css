@@ -104,10 +104,18 @@ img {
 }
 
 .thumbnails {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
+h2 {
+   position: absolute;
+   top: 50px;
+   left: 0px;
+   width: 100%;
+   color: white;
+}
 
 
 

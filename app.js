@@ -28,15 +28,32 @@ function displayResults(response) {
   var watchUrl = "https://www.youtube.com/watch?v=";
 
 
-  response.items.forEach(appendResults);
+// Mouse Hover Effect
+function hoverTitle(item, i) {
+  $(`#output${i+1}`).mouseover(function() {
+    $(`.title${i+1}` ).html( response.items[i].snippet.title );
+  });
+  $(`#output${i+1}`).mouseout(function() {
+    $("h2" ).empty();
+  });
+}
 
+
+  response.items.forEach(appendResults);
+  response.items.forEach(hoverTitle);
   // for (let i=0; i < response.items.length; i++ ){
   //   console.log(response.items[i])
   //   $(`#output${i+1}`).find("img").attr('src', response.items[i].snippet.thumbnails.medium.url);
   //   $(`#output${i+1}`).find('a').attr('href', watchUrl + response.items[i].id.videoId);
   // }
 
+
 }
+
+
+
+
+
 
 
 function formSubmit() {
